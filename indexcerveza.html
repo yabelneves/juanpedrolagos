@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JP BEER</title>
+    <link rel="icon" href="Imagenes/logoJPBEER.png" type="image/x-icon">
+    <style>
+      /* CSS para centrar la imagen */
+      .section__top {
+          display: flex;             
+          justify-content: center;   /* Centrar H */
+          align-items: center;       /* Centrar V */
+          height: 50vh;              /* Ajusta el alto desde arriba hacia abajo */
+      }
+
+      /* Estilo para el texto */
+      .about__text {
+         font-family: 'Arial', sans-serif; /* Fuente */
+         font-size: 18px;                 /* Tamaño texto */
+         color: #333;                     /* Color texto */
+         line-height: 1.8;                /* Espaciado entre líneas */
+         text-align: center;              /* Centrar texto */
+      }
+
+      /* Estilo de la galería */
+      .gallery {
+          display: grid;                   /* Usa una cuadrícula */
+          grid-template-columns: repeat(3, 1fr); /* Disposición responsiva */
+          gap: 15px;                       /* Espacio entre las imágenes */
+          justify-items: center;           /* Centrar las imágenes */
+          padding: 20px;                   /* Relleno alrededor de la galería */
+      }
+
+      /* Estilo de cada imagen */
+      .gallery_items {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+      }
+
+      .gallery_img {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+      }
+
+      .gallery_img:hover {
+          transform: scale(1.1);           /* Aumenta el tamaño de la imagen al hacer hover */
+      }
+    </style>
+</head>
+<body>
+    <section class="section__top">
+         <img class="img__logo" src="Imagenes/logoJPBEER.png" alt="Inicio" width="300" height="auto">
+    </section>
+
+    <section class="section--about">
+        <p class="about__text">
+          En JP BEER nos apasiona crear experiencias únicas en torno a la cerveza artesanal. Combinamos ingredientes de calidad con técnicas tradicionales y un toque innovador para ofrecer sabores que sorprenden y deleitan. Aquí, cada pinta cuenta una historia, cada burbuja celebra la amistad y cada encuentro se convierte en un momento inolvidable.
+        </p>
+        <div class="border"></div>
+    </section>
+
+    <section class="section--work">
+        <div class="gallery">
+            <div class="gallery_items">
+               <a href="pagrubia.html">
+                  <img class="gallery_img" src="Imagenes/rubia.jpeg" alt="galeria 1">
+              </a>
+            </div>
+            <div class="gallery_items">
+               <a href="pagblanca.html">
+                  <img class="gallery_img" src="Imagenes/blanca.jpeg" alt="galeria 2">
+              </a>
+            </div>
+            <div class="gallery_items">
+               <a href="pagnegra.html">
+                  <img class="gallery_img" src="Imagenes/negra.jpeg" alt="galeria 3">
+              </a>
+            </div>
+            <div class="gallery_items">
+               <a href="paglagger.html">
+                  <img class="gallery_img" src="Imagenes/lagger.jpeg" alt="galeria 4">
+              </a>
+            </div>
+            <div class="gallery_items">
+               <a href="pagale.html">
+                  <img class="gallery_img" src="Imagenes/ale.jpeg" alt="galeria 5">
+              </a>
+            </div>
+            <div class="gallery_items">
+               <a href="pagpilsen.html">
+                  <img class="gallery_img" src="Imagenes/pilsen.jpg" alt="galeria 6">
+              </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section--contact">
+        <div class="border"></div>
+        <div class="about__text">
+            <div class="contact_column">
+                <p class="contact_text">
+                    Cervecería Artesanal<br>
+                    Independencia 500 <br>
+                    Florida, Uruguay
+                </p>
+            </div>
+            <div class="about__text">
+                <p class="contact_text">
+                    <a href="https://www.instagram.com/" target="blank">Instagram</a>
+                </p>
+                <p class="about__text">
+                  <a href="https://www.facebook.com/?locale=es_LA" target="blank">Facebook</a>
+              </p>
+                <p class="about__text">
+                    <a href="mailto: cerveceriajpbeer@gmail.com" target="_blank">Email</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
